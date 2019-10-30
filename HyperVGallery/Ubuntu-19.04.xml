@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<vhd>
+<details>
+  <name>Ubuntu 19.04</name>
+  <publisher>Canonical Group Ltd</publisher>
+  <lastUpdated>2019-09-05T12:00:00Z</lastUpdated>
+  <release>19.04</release>
+  <codename>Disco Dingo</codename>
+  <license>https://www.ubuntu.com/licensing</license>
+</details>
+<descriptions>
+        <description id="1">
+
+
+
+
+Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.
+
+
+
+
+</description>
+            <description id="2">
+
+
+
+
+This is the latest release and comes with nine months of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.  A new version of Ubuntu is released every six months.
+
+
+
+
+</description>
+            <description id="3">
+
+
+Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.
+
+
+
+
+</description>
+</descriptions>
+
+
+<!--VHD Specific Detail-->
+<!--Do not localize-->
+ <image>
+   <locale>en-US</locale>
+   <diskSpace>1600041774</diskSpace>
+   <version>19.04</version>
+   <disk>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/disco/release/20190905/ubuntu-desktop-vhdx-19.04.zip</uri>
+     <hash>sha256:91FD007062BAF2E7D44DEF1E70CDAC7150F15C328F0CEBEC951F127CDE5C2040</hash>
+     <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
+   </disk>
+   <logo>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/disco/release/20190905/ubuntu_logo.png</uri>
+     <hash>sha256:336689A74C41848C7B1A09384DB0E06DDAE747FE554B774DD2CF9382537AB457</hash>
+   </logo>
+   <symbol>
+	   <uri>https://partner-images.canonical.com/hyper-v/desktop/disco/release/20190905/ubuntu_symbol.png</uri>
+     <hash>sha256:D53CCE48671403029CB1C4C25510428436118AC920A19CC7DD272506F5B9CD24</hash>
+   </symbol>
+   <thumbnail>
+	   <uri>https://partner-images.canonical.com/hyper-v/desktop/disco/release/20190905/ubuntu_thumbnail.jpg</uri>
+     <hash>sha256:74A8E29E44BCD2A2E12AE6C78C5D28156FF96A6FF87D8ACE55D5559CA51A0921</hash>
+   </thumbnail>
+   <secureBoot>false</secureBoot>
+   <enhancedSessionTransportType>HvSocket</enhancedSessionTransportType>
+ </image>
+</vhd>
