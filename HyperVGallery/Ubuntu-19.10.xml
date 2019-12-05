@@ -28,7 +28,7 @@ Ubuntu is free and will always be, and you have the option to get support and La
    <diskSpace>1600041774</diskSpace>
    <version>19.10</version>
    <disk>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191017/ubuntu-desktop-vhdx-19.10.zip</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191017/ubuntu-desktop-vhdx-19.10-0.zip</uri>
      <hash>sha256:14DECFCF250FE39FD6D5BE4A50382CEFA5DCF0D89B14001F55199DACEF7006C6</hash>
      <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
    </disk>
