@@ -28,20 +28,20 @@ Ubuntu is free and will always be, and you have the option to get support and La
    <diskSpace>1600041774</diskSpace>
    <version>19.10</version>
    <disk>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191017/ubuntu-desktop-vhdx-19.10.zip</uri>
-     <hash>sha256:14DECFCF250FE39FD6D5BE4A50382CEFA5DCF0D89B14001F55199DACEF7006C6</hash>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu-desktop-vhdx-19.10.zip</uri>
+     <hash>sha256:40FDABCE0C032206F4E04245EFED04323CDB36A935C3F573B0E3A28F14D3E75D</hash>
      <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
    </disk>
    <logo>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191017/ubuntu_logo.png</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_logo.png</uri>
      <hash>sha256:336689A74C41848C7B1A09384DB0E06DDAE747FE554B774DD2CF9382537AB457</hash>
    </logo>
    <symbol>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191017/ubuntu_symbol.png</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_symbol.png</uri>
      <hash>sha256:D53CCE48671403029CB1C4C25510428436118AC920A19CC7DD272506F5B9CD24</hash>
    </symbol>
    <thumbnail>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191017/ubuntu_thumbnail.jpg</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_thumbnail.jpg</uri>
      <hash>sha256:74A8E29E44BCD2A2E12AE6C78C5D28156FF96A6FF87D8ACE55D5559CA51A0921</hash>
    </thumbnail>
    <secureBoot>false</secureBoot>
