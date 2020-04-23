@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<vhd>
+<details>
+  <name>Ubuntu 20.04</name>
+  <publisher>Canonical Group Ltd</publisher>
+  <lastUpdated>2020-04-23T12:00:00Z</lastUpdated>
+  <release>20.04</release>
+  <codename>Focal Fossa</codename>
+  <license>https://www.ubuntu.com/licensing</license>
+</details>
+<descriptions>
+  <description id="1">
+Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.
+  </description>
+  <description id="2">
+This LTS release comes with five years of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.
+  </description>
+  <description id="3">
+Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.
+  </description>
+</descriptions>
+
+
+<!--VHD Specific Detail-->
+<!--Do not localize-->
+ <image>
+   <locale>en-US</locale>
+   <diskSpace>1600041774</diskSpace>
+   <version>20.04</version>
+   <disk>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/daily/20200423/ubuntu-desktop-focal-20200423.vhdx.zip</uri>
+     <hash>sha256:f551376f78ba84179c2baeeca8722e52a32bdf47cd5bc18cd54aedbe8c9c2147</hash>
+     <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
+   </disk>
+   <logo>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/daily/20200423/ubuntu_logo.png</uri>
+     <hash>sha256:336689a74c41848c7b1a09384db0e06ddae747fe554b774dd2cf9382537ab457</hash>
+   </logo>
+   <symbol>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_symbol.png</uri>
+     <hash>sha256:d53cce48671403029cb1c4c25510428436118ac920a19cc7dd272506f5b9cd24</hash>
+   </symbol>
+   <thumbnail>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_thumbnail.jpg</uri>
+     <hash>sha256:5703ad8764ec672199f3e29abc99975716775bb1f30a11836cbb95f5701a3d84</hash>
+   </thumbnail>
+   <secureBoot>false</secureBoot>
+   <enhancedSessionTransportType>HvSocket</enhancedSessionTransportType>
+ </image>
+</vhd>
