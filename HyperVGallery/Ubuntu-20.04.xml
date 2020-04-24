@@ -28,20 +28,20 @@ Ubuntu is free and will always be, and you have the option to get support and La
    <diskSpace>1600041774</diskSpace>
    <version>20.04</version>
    <disk>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/daily/20200423/ubuntu-desktop-focal-20200423.vhdx.zip</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu-desktop-focal-20200423.vhdx.zip</uri>
      <hash>sha256:f551376f78ba84179c2baeeca8722e52a32bdf47cd5bc18cd54aedbe8c9c2147</hash>
      <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
    </disk>
    <logo>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/daily/20200423/ubuntu_logo.png</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu_logo.png</uri>
      <hash>sha256:336689a74c41848c7b1a09384db0e06ddae747fe554b774dd2cf9382537ab457</hash>
    </logo>
    <symbol>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_symbol.png</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu_symbol.png</uri>
      <hash>sha256:d53cce48671403029cb1c4c25510428436118ac920a19cc7dd272506f5b9cd24</hash>
    </symbol>
    <thumbnail>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/eoan/release/20191113/ubuntu_thumbnail.jpg</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu_thumbnail.jpg</uri>
      <hash>sha256:5703ad8764ec672199f3e29abc99975716775bb1f30a11836cbb95f5701a3d84</hash>
    </thumbnail>
    <secureBoot>false</secureBoot>
