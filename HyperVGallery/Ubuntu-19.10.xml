@@ -9,15 +9,9 @@
   <license>https://www.ubuntu.com/licensing</license>
 </details>
 <descriptions>
-  <description id="1">
-Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.
-  </description>
-  <description id="2">
-This is the latest release and comes with nine months of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.  A new version of Ubuntu is released every six months.
-  </description>
-  <description id="3">
-Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.
-  </description>
+  <description id="1">Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.</description>
+  <description id="2">This is the latest release and comes with nine months of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.  A new version of Ubuntu is released every six months.</description>
+  <description id="3">Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.</description>
 </descriptions>
 
 
