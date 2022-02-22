@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <vhd>
 <details>
-  <name>Ubuntu 20.04</name>
+  <name>Ubuntu 20.04 LTS</name>
   <publisher>Canonical Group Ltd</publisher>
   <lastUpdated>2020-04-23T12:00:00Z</lastUpdated>
-  <release>20.04</release>
+  <release>20.04 LTS</release>
   <codename>Focal Fossa</codename>
   <license>https://www.ubuntu.com/licensing</license>
 </details>
@@ -20,7 +20,7 @@
  <image>
    <locale>en-US</locale>
    <diskSpace>1600041774</diskSpace>
-   <version>20.04</version>
+   <version>20.04 LTS</version>
    <disk>
      <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu-desktop-focal-20200423.vhdx.zip</uri>
      <hash>sha256:f551376f78ba84179c2baeeca8722e52a32bdf47cd5bc18cd54aedbe8c9c2147</hash>
