@@ -1,0 +1,117 @@
+#!/bin/sh
+
+RELEASES="bionic focal jammy"
+PARTNERURL="https://partner-images.canonical.com/hyper-v/desktop/"
+DISTROINFO="$(distro-info --supported -f)"
+TMPXML=$(mktemp -d /tmp/hyper-v-XXXXXX)
+CURDIR=$(readlink -f $(dirname $0))
+
+cleanup() {
+    #
+    # Cleanup temporary files
+    #
+    [ -d "$TMPXML" ] && rm -Rf "$TMPXML"
+}
+trap cleanup EXIT INT QUIT ABRT PIPE TERM
+
+dump_xml() {
+    # Write XML definition file for the given release
+    # $1 = release
+    # $2 = name
+    # $3 = vhdx
+    # $4 = sha256sum
+    #
+
+    local releasename="$1"
+    local codename="$2"
+    local vhdx="$3"
+    local sha256sum="$4"
+
+    version=$(echo $releasename | cut -d ' ' -f2-)
+cat<<EOF
+<?xml version="1.0"?>
+<vhd>
+<details>
+  <name>${releasename}</name>
+  <publisher>Canonical Group Ltd</publisher>
+  <lastUpdated>$(date -Iseconds)</lastUpdated>
+  <release>${version}</release>
+  <codename>${codename}</codename>
+  <license>https://www.ubuntu.com/licensing</license>
+</details>
+<descriptions>
+	<description id="1">Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.</description>
+    	<description id="2">This LTS release comes with five years of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.</description>
+    	<description id="3">Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.</description>
+</descriptions>
+
+<!--VHD Specific Detail-->
+<!--Do not localize-->
+ <image>
+   <locale>en-US</locale>
+   <diskSpace>1600041774</diskSpace>
+   <version>${version}</version>
+   <disk>
+     <uri>${vhdx}</uri>
+     <hash>sha256:$(read_sha256sum ${sha256sum})</hash>
+     <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
+   </disk>
+   <logo>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_logo.png</uri>
+     <hash>sha256:336689A74C41848C7B1A09384DB0E06DDAE747FE554B774DD2CF9382537AB457</hash>
+   </logo>
+   <symbol>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_symbol.png</uri>
+     <hash>sha256:D53CCE48671403029CB1C4C25510428436118AC920A19CC7DD272506F5B9CD24</hash>
+   </symbol>
+   <thumbnail>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_thumbnail.jpg</uri>
+     <hash>sha256:5703AD8764EC672199F3E29ABC99975716775BB1F30A11836CBB95F5701A3D84</hash>
+   </thumbnail>
+   <secureBoot>false</secureBoot>
+   <enhancedSessionTransportType>HvSocket</enhancedSessionTransportType>
+ </image>
+</vhd>
+EOF
+}
+
+read_sha256sum() {
+    # Read the sha256sum of the given url
+    # $1 = url
+    #
+    wget -q -O - ${1}|grep 'zip$'| cut -d' ' -f1
+}
+
+for release in $RELEASES; do
+  # <name>Ubuntu 18.04 LTS</name>
+  # <release>18.04 LTS</release>
+  # <codename>Bionic Beaver</codename>
+
+    releasename=$(echo "${DISTROINFO}"|grep -i $release|cut -d'"' -f1)
+    releasename=$(echo ${releasename})  # Trim whitespaces
+    codename=$(echo "${DISTROINFO}"|grep -i $release|cut -d'"' -f2)
+    echo "= Generating XML for $releasename ="
+
+    url=${PARTNERURL}/${release}/current
+    vhdx=""
+    sha=""
+
+    lynx -dump -listonly ${url}|awk '{print $2}' > $TMPXML/${release}.list
+    while read line; do
+        if echo ${line}|grep -qE '\.zip$'; then
+            echo "Found hyper-v"
+            vhdx="${line}"
+        elif echo ${line}|grep -qE 'SHA256SUMS$'; then
+            echo "Found sha256sum"
+            sha="${line}"
+        fi
+    done < $TMPXML/${release}.list
+
+    if [ -z "${vhdx}" -o -z "${sha}" ]; then
+        echo "Could not find vhdx or sha256sum"
+        continue
+    fi
+
+    outputbase=$(echo ${releasename}|cut -d' ' -f-2|tr ' ' '-')
+    dump_xml "${releasename}" "${codename}" "${vhdx}" "${sha}" > $CURDIR/HyperVGallery/${outputbase}.xml
+done
