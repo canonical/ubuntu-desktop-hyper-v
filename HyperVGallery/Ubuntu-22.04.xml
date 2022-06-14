@@ -3,15 +3,15 @@
 <details>
   <name>Ubuntu 22.04 LTS</name>
   <publisher>Canonical Group Ltd</publisher>
-  <lastUpdated>2022-06-11T10:54:26+02:00</lastUpdated>
+  <lastUpdated>2022-06-14T09:34:48+02:00</lastUpdated>
   <release>22.04 LTS</release>
   <codename>Jammy Jellyfish</codename>
   <license>https://www.ubuntu.com/licensing</license>
 </details>
 <descriptions>
-	<description id="1">Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.</description>
-    	<description id="2">This LTS release comes with five years of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.</description>
-    	<description id="3">Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.</description>
+  <description id="1">Ubuntu is used by thousands of development teams around the world because of its versatility, reliability and extensive developer libraries.</description>
+  <description id="2">This LTS release comes with five years of support meaning that you can be assured of secure and dependable operating system giving you the fastest route from development to deployment on desktop, devices, server, cloud and IoT edge.</description>
+  <description id="3">Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.</description>
 </descriptions>
 
 <!--VHD Specific Detail-->
@@ -21,7 +21,7 @@
    <diskSpace>1600041774</diskSpace>
    <version>22.04 LTS</version>
    <disk>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/jammy/current/ubuntu-jammy-hyperv-amd64-ubuntu-desktop-hyperv.vhdx.zip</uri>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/jammy/release/current/ubuntu-jammy-hyperv-amd64-ubuntu-desktop-hyperv.vhdx.zip</uri>
      <hash>sha256:eb6b904aa40f7214bdeade25e7b189db8c25a021b711677c1049d61867ff20cf</hash>
      <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
    </disk>

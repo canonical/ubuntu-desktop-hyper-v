@@ -3,7 +3,7 @@
 <details>
   <name>Ubuntu 20.04 LTS</name>
   <publisher>Canonical Group Ltd</publisher>
-  <lastUpdated>2020-04-23T12:00:00Z</lastUpdated>
+  <lastUpdated>2022-06-14T09:34:47+02:00</lastUpdated>
   <release>20.04 LTS</release>
   <codename>Focal Fossa</codename>
   <license>https://www.ubuntu.com/licensing</license>
@@ -14,7 +14,6 @@
   <description id="3">Ubuntu is free and will always be, and you have the option to get support and Landscape from Canonical. See https://www.ubuntu.com/legal for terms and conditions.</description>
 </descriptions>
 
-
 <!--VHD Specific Detail-->
 <!--Do not localize-->
  <image>
@@ -22,21 +21,21 @@
    <diskSpace>1600041774</diskSpace>
    <version>20.04 LTS</version>
    <disk>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu-desktop-focal-20200423.vhdx.zip</uri>
-     <hash>sha256:f551376f78ba84179c2baeeca8722e52a32bdf47cd5bc18cd54aedbe8c9c2147</hash>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/current/ubuntu-focal-hyperv-amd64-ubuntu-desktop-hyperv.vhdx.zip</uri>
+     <hash>sha256:774ca63101dc421c1dabd68f4cb89ad11374ca4cbd8ecc337429281ffd8cbad0</hash>
      <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
    </disk>
    <logo>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu_logo.png</uri>
-     <hash>sha256:336689a74c41848c7b1a09384db0e06ddae747fe554b774dd2cf9382537ab457</hash>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_logo.png</uri>
+     <hash>sha256:336689A74C41848C7B1A09384DB0E06DDAE747FE554B774DD2CF9382537AB457</hash>
    </logo>
    <symbol>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu_symbol.png</uri>
-     <hash>sha256:d53cce48671403029cb1c4c25510428436118ac920a19cc7dd272506f5b9cd24</hash>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_symbol.png</uri>
+     <hash>sha256:D53CCE48671403029CB1C4C25510428436118AC920A19CC7DD272506F5B9CD24</hash>
    </symbol>
    <thumbnail>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/focal/release/20200423/ubuntu_thumbnail.jpg</uri>
-     <hash>sha256:5703ad8764ec672199f3e29abc99975716775bb1f30a11836cbb95f5701a3d84</hash>
+     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_thumbnail.jpg</uri>
+     <hash>sha256:5703AD8764EC672199F3E29ABC99975716775BB1F30A11836CBB95F5701A3D84</hash>
    </thumbnail>
    <secureBoot>false</secureBoot>
    <enhancedSessionTransportType>HvSocket</enhancedSessionTransportType>
