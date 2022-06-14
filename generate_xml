@@ -92,7 +92,7 @@ for release in $RELEASES; do
     codename=$(echo "${DISTROINFO}"|grep -i $release|cut -d'"' -f2)
     echo "= Generating XML for $releasename ="
 
-    url=${PARTNERURL}/${release}/current
+    url=${PARTNERURL}/${release}/release/current
     vhdx=""
     sha=""
 
