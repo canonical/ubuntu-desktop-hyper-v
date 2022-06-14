@@ -57,15 +57,15 @@ cat<<EOF
      <archiveRelativePath>livecd.ubuntu-desktop-hyperv.vhdx</archiveRelativePath>
    </disk>
    <logo>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_logo.png</uri>
+     <uri>https://github.com/canonical/ubuntu-desktop-hyper-v/raw/master/images/ubuntu_logo.png</uri>
      <hash>sha256:336689A74C41848C7B1A09384DB0E06DDAE747FE554B774DD2CF9382537AB457</hash>
    </logo>
    <symbol>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_symbol.png</uri>
+     <uri>https://github.com/canonical/ubuntu-desktop-hyper-v/raw/master/images/ubuntu_symbol.png</uri>
      <hash>sha256:D53CCE48671403029CB1C4C25510428436118AC920A19CC7DD272506F5B9CD24</hash>
    </symbol>
    <thumbnail>
-     <uri>https://partner-images.canonical.com/hyper-v/desktop/bionic/release/20190829/ubuntu_thumbnail.jpg</uri>
+     <uri>https://github.com/canonical/ubuntu-desktop-hyper-v/raw/master/images/ubuntu_thumbnail.jpg</uri>
      <hash>sha256:5703AD8764EC672199F3E29ABC99975716775BB1F30A11836CBB95F5701A3D84</hash>
    </thumbnail>
    <secureBoot>false</secureBoot>
